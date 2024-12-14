@@ -15,7 +15,6 @@ async function main() {
 
   // Create account from private key
   // WARNING: In production, use secure key management
-  console.log("Environment variables loaded. PRIVATE_KEY:", process.env.PRIVATE_KEY)
   const account = await Account.fromPrivateKey({ 
     privateKey: new Ed25519PrivateKey(process.env.PRIVATE_KEY) 
   })
